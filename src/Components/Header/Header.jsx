@@ -26,12 +26,12 @@ const Header = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1 gap-6 text-base">
-                        <NavLink to={'/'}>Home</NavLink>
-                        <NavLink to={'/Listed-Books'}>Listed Books</NavLink>
-                        <NavLink to={'/Pages-to-Read'}>Pages to Read</NavLink>
-                        <NavLink to={'/About'}>About</NavLink>
-                        <NavLink to={'/contact'}>Contact</NavLink>
-                    </ul>
+                        <NavLink className="hover:border-b border-green-500" to={'/'}>Home</NavLink>
+                        <NavLink className="hover:border-b border-green-500" to={'/Listed-Books'}>Listed Books</NavLink>
+                        <NavLink className="hover:border-b border-green-500" to={'/Pages-to-Read'}>Pages to Read</NavLink>
+                        <NavLink className="hover:border-b border-green-500" to={'/About'}>About</NavLink>
+                        <NavLink className="hover:border-b border-green-500" to={'/contact'}>Contact</NavLink>
+                    </ul> 
                 </div>
                 <div className="lg:navbar-end gap-4">
                     <button className="px-4 py-[6px] rounded-lg bg-[#23BE0A] text-white">Sign In</button>

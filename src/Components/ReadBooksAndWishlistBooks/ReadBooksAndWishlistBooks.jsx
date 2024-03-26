@@ -2,8 +2,8 @@ import React from 'react';
 import { FiUsers } from "react-icons/fi";
 import { IoBookmarksOutline } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
-const DisplayReadBooksAndWishlistBooks = ({ book }) => {
 
+const DisplayReadBooksAndWishlistBooks = ({ book }) => {
     const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
     return (
         <div>

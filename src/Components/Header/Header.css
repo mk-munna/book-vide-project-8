@@ -4,3 +4,8 @@ a.active{
     padding: 2px 8px 2px 8px;
     border-radius: 6px;
 }
+a.active:hover{
+    background: #23BE0A;
+    color: white;
+    transition: 0.2s;
+}
