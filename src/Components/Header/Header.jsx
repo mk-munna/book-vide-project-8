@@ -18,8 +18,8 @@ const Header = () => {
                             <NavLink to={'/'}>Home</NavLink>
                             <NavLink to={'/Listed-Books'}>Listed Books</NavLink>
                             <NavLink to={'/Pages-to-Read'}>Pages to Read</NavLink>
-                            <NavLink to={'/About'}>About</NavLink>
-                            <NavLink to={'/contact'}>Contact</NavLink>
+                            <NavLink to={'/famous-author'}>Famous Author</NavLink>
+                            <NavLink to={'/contact'}>Contact us</NavLink>
                         </ul>
                     </div>
                     <p className=" text-2xl font-bold ">MK BookStore</p>
@@ -29,8 +29,8 @@ const Header = () => {
                         <NavLink className="hover:border-b border-green-500" to={'/'}>Home</NavLink>
                         <NavLink className="hover:border-b border-green-500" to={'/Listed-Books'}>Listed Books</NavLink>
                         <NavLink className="hover:border-b border-green-500" to={'/Pages-to-Read'}>Pages to Read</NavLink>
-                        <NavLink className="hover:border-b border-green-500" to={'/About'}>About</NavLink>
-                        <NavLink className="hover:border-b border-green-500" to={'/contact'}>Contact</NavLink>
+                        <NavLink className="hover:border-b border-green-500" to={'/famous-author'}>Famous Authors</NavLink>
+                        <NavLink className="hover:border-b border-green-500" to={'/contact'}>Contact Us</NavLink>
                     </ul> 
                 </div>
                 <div className="lg:navbar-end gap-4">

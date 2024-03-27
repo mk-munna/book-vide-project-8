@@ -12,6 +12,8 @@ import ListedBooks from './Components/ListedBooks/ListedBooks';
 import BookDetails from './Components/BookDetails/BookDetails';
 import PageToRead from './Components/PageToRead/PageToRead';
 import Contact from './Components/ContactUS/Contact';
+import Test from './Components/Test/Test';
+import FamousAuthor from './Components/FamousAuthor/FamousAuthor';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -39,8 +41,16 @@ const router = createBrowserRouter([
         loader: () => fetch('https://raw.githubusercontent.com/mk-munna/api-3/main/api.json')
       },
       {
+        path: '/famous-author',
+        element: <FamousAuthor></FamousAuthor>
+      },
+      {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/test',
+        element:<Test></Test>
       }
     ]
   }
