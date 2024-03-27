@@ -28,11 +28,11 @@ export default function App() {
     }
     const readListId = getBooksFromBookList();
     const readListedBooks = books.filter(book => readListId.includes(book.bookId));
-    console.log(readListedBooks);
+    // console.log(readListedBooks);
     return (
         <div className='flex justify-center items-center mt-12 mb-20'>
             <BarChart
-                width={900}
+                width={window.innerWidth > 700? 900 : 370}
                 height={450}
                 data={readListedBooks}
                 margin={{

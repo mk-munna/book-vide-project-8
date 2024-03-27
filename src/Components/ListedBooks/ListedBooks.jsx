@@ -14,15 +14,13 @@ const ListedBooks = () => {
     const readListId = getBooksFromBookList();
     const readListedBooks = listedBooks.filter(book => readListId.includes(book.bookId));
     // console.log('list main', readListedBooks);
-// readList-----------------------------------------------------
+    // readList-----------------------------------------------------
     const sortedReadByRating = [...readListedBooks].sort((a, b) => b.rating - a.rating);
-    console.log('rating', sortedReadByRating);
-    //sort by total page
+    // console.log('rating', sortedReadByRating);
     const sortedReadByTotalPage = [...readListedBooks].sort((a, b) => b.totalPages - a.totalPages);
-    console.log('page', sortedReadByTotalPage);
-    //sort by published year
+    // console.log('page', sortedReadByTotalPage);
     const sortedReadByPublishYear = [...readListedBooks].sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
-    console.log('year', sortedReadByPublishYear);
+    // console.log('year', sortedReadByPublishYear);
     //----------------------------------------------------
     const getBooksFromWishList = () => {
         const storedBookList = localStorage.getItem('wishList');
@@ -49,12 +47,9 @@ const ListedBooks = () => {
             setShowDataRead(true)
             // console.log(readListId);
         }
-        if (wishListId.length === 0) {
-            console.log('empty wishlist');
-            console.log(wishListId);
-        } else {
-            console.log('available wishlist');
-            console.log(wishListId);
+        if (wishListId.length > 0) {
+            // console.log('available wishlist');
+            // console.log(wishListId);
             const storedBookList = localStorage.getItem('wishList')
             const list = JSON.parse(storedBookList);
             if (list.length > 0) {
@@ -62,15 +57,15 @@ const ListedBooks = () => {
             }
         }
     }, [])
-    const [defaultList , setDefaultList] = useState(true);
+    const [defaultList, setDefaultList] = useState(true);
     const [rating, setRating] = useState(false);
     const [totalPages, setTotalPages] = useState(false);
     const [yearOfPublishing, setYearOfPublishing] = useState(false);
-    console.log('default',defaultList);
-    console.log('rating',rating);
-    console.log('totalPages',totalPages);
-    console.log('yearOfPublishing', yearOfPublishing);
-    console.log('main', readListedBooks);
+    // console.log('default',defaultList);
+    // console.log('rating',rating);
+    // console.log('totalPages',totalPages);
+    // console.log('yearOfPublishing', yearOfPublishing);
+    // console.log('main', readListedBooks);
     return (
         <div className='my-12'>
             <div>
@@ -104,7 +99,7 @@ const ListedBooks = () => {
             </div>
 
             <div role="tablist" className="tabs tabs-lifted mt-10">
-                <input type="radio" name="my_tabs_2" role="tab" defaultChecked className="tab text-base" aria-label="Read Books" />
+                <input type="radio" name="my_tabs_2" role="tab" defaultChecked className="h-20 lg:h-12 tab text-base" aria-label="Read Books" />
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-8">
                     {
                         showDataRead ? (
@@ -170,13 +165,13 @@ const ListedBooks = () => {
                                     }
                                 </div>
                             </div>
-                            
+
                         ) : (
                             <div className='text-3xl text-gray-400 flex items-center ml-12 h-52'>No Read Books</div>
                         )
                     }
                 </div>
-                <input type="radio" name="my_tabs_2" role="tab" className="tab text-base p-6" aria-label="Wishlist Books" />
+                <input type="radio" name="my_tabs_2" role="tab" className="tab text-base h-20 lg:h-12" aria-label="Wishlist Books" />
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-8">
                     {
                         showDataWish ? (

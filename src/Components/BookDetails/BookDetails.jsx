@@ -78,11 +78,11 @@ const BookDetails = () => {
         
     }
     return (
-        <div className='flex gap-6 my-20'>
-            <div className='w-[600px] bg-base-200 flex justify-center items-center p-12 rounded-xl'>
+        <div className='flex flex-col lg:flex-row gap-6 my-20'>
+            <div className='lg:w-[450px] w-[340px] mx-auto bg-base-200 flex justify-center items-center p-12 rounded-xl'>
                 <img height={'250px'} width={'250px'} src={image} alt="" />
             </div>
-            <div className='space-y-4'>
+            <div className='space-y-4 p-6 lg:p-0 lg:w-[600px] '>
                 <h1 className='text-5xl'>{bookName}</h1>
                 <h2>By : {author}</h2>
                 <hr />
@@ -98,7 +98,7 @@ const BookDetails = () => {
                     })}</h2>
                 </div>
                 <div className="overflow-x-auto">
-                    <table className="table w-2/4">
+                    <table className="table w-3/4 pt-2 leading-6 lg:leading-3">
                         {/* head */}
                         <thead>
                         </thead>
@@ -130,8 +130,8 @@ const BookDetails = () => {
                         <button onClick={()=>{handleAddWish()}} className="px-4 py-[6px] min-h-[42px] btn  h-[42px] rounded-lg bg-[#59C6D2] hover:bg-[#4aa8b3]  text-white">Wishlist</button>
                     </div>
                 </div>
-            </div>
             <ToastContainer />
+            </div>
         </div>
     );
 };
