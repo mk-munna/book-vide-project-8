@@ -7,5 +7,5 @@ a.active{
 a.active:hover{
     background: #23BE0A;
     color: white;
-    transition: 0.2s;
+    transition: 0.25s;
 }

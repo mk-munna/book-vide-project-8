@@ -22,7 +22,7 @@ const Header = () => {
                             <NavLink to={'/contact'}>Contact</NavLink>
                         </ul>
                     </div>
-                    <p className=" text-2xl font-bold ">Book Vibe</p>
+                    <p className=" text-2xl font-bold ">MK BookStore</p>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1 gap-6 text-base">
