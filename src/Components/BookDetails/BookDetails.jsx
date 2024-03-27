@@ -4,7 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetails = () => {
-    const books = useLoaderData()
+    const booksLoad = useLoaderData()
+    const books = JSON.parse(booksLoad); 
     const { id } = useParams()
     // console.log(id);
     const idInt = parseInt(id)

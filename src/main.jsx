@@ -24,17 +24,18 @@ const router = createBrowserRouter([
       {
         path: '/listed-books',
         element: <ListedBooks></ListedBooks>,
-        loader: ()=> fetch('../public/Books.json')
+        loader: () => fetch('https://raw.githubusercontent.com/mk-munna/api-3/main/api.json')
       },
       {
         path: '/book/:id',
-        loader: ()=> fetch('../public/Books.json'),
-        element:<BookDetails></BookDetails>
+        element: <BookDetails></BookDetails>,
+        loader: () => fetch('https://raw.githubusercontent.com/mk-munna/api-3/main/api.json'),
+        
       },
       {
         path: '/Pages-to-Read',
         element: <PageToRead></PageToRead>,
-        loader: ()=> fetch('../public/Books.json')
+        loader: () => fetch('https://raw.githubusercontent.com/mk-munna/api-3/main/api.json')
       }
     ]
   }

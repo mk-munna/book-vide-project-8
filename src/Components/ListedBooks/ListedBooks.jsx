@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import DisplayReadBooksAndWishlistBooks from '../ReadBooksAndWishlistBooks/ReadBooksAndWishlistBooks';
 const ListedBooks = () => {
-    const listedBooks = useLoaderData()
-    // console.log(listedBooks);
+    const LoadedListedBooks = useLoaderData()
+    const listedBooks = JSON.parse(LoadedListedBooks)
     const getBooksFromBookList = () => {
         const storedBookList = localStorage.getItem('readList');
         if (storedBookList) {

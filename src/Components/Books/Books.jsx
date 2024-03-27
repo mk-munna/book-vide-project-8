@@ -4,11 +4,11 @@ import Book from '../Book/Book';
 const Books = () => {
     const [books, setBooks] = useState([]);
     useEffect(() => {
-        fetch('../../../public/Books.json')
+        fetch('https://raw.githubusercontent.com/mk-munna/api-3/main/api.json')
             .then(Response => Response.json())
             .then(data => setBooks(data))
     }, [])
-    // console.log(books);
+    // console.log('books', books);
     return (
         <div className='mt-14'>
             <h1 className='text-4xl text-center font-bold mb-12'>Books</h1>
