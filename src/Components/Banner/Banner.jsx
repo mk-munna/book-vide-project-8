@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <div className='mt-6 h-[550px] rounded-3xl lg:flex justify-between items-center bg-[#1313130D] lg:px-[120px] px-6'>
+        <div className='mt-12 h-[550px] rounded-3xl lg:flex justify-between items-center bg-[#1313130D] lg:px-[120px] px-6'>
             <div className='space-y-12'>
                 <h1 className='text-6xl'>Books to freshen up your bookshelf</h1>
                 <div>
