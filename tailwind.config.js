@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        anDiKa: ["Andika"],
+        workSans: ["Work Sans"],
+        playFairDisplay: ["Playfair Display"]
+      }
+    },
   },
   plugins: [require("daisyui")],
 }

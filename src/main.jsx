@@ -11,6 +11,7 @@ import ErrorPage from './Components/ErrorPage/ErrorPage';
 import ListedBooks from './Components/ListedBooks/ListedBooks';
 import BookDetails from './Components/BookDetails/BookDetails';
 import PageToRead from './Components/PageToRead/PageToRead';
+import Contact from './Components/ContactUS/Contact';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: '/Pages-to-Read',
         element: <PageToRead></PageToRead>,
         loader: () => fetch('https://raw.githubusercontent.com/mk-munna/api-3/main/api.json')
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
       }
     ]
   }
