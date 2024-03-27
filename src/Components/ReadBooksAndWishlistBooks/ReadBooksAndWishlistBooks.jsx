@@ -2,13 +2,13 @@ import React from 'react';
 import { FiUsers } from "react-icons/fi";
 import { IoBookmarksOutline } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
+import { SlCalender } from "react-icons/sl";
 
 const DisplayReadBooksAndWishlistBooks = ({ book }) => {
     const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
     return (
         <div>
-            <div>
-                <hr />
+            <div className='border w-full rounded-2xl mb-6 px-6'>
                 <div className='flex gap-6 my-10'>
                     <div className='p-6 flex justify-center items-center w-[240px] h-[240px] bg-base-200 rounded-xl'><img src={image} alt="" /></div>
                     <div className='space-y-4'>
@@ -21,6 +21,7 @@ const DisplayReadBooksAndWishlistBooks = ({ book }) => {
                                     <p key={index} className='text-[#23BE0A] bg-[#23BE0A0D] px-2 py-1 rounded-xl text-center text-base'> #{tag}</p>
                                 )
                             })}</h2>
+                            <p className='text-sm flex items-center gap-4'><SlCalender /> Published Year : {yearOfPublishing}</p>
                         </div>
                         <div className='flex gap-8'>
                             <p className='flex items-center gap-3'><FiUsers />
