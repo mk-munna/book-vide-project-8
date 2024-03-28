@@ -12,7 +12,6 @@ import ListedBooks from './Components/ListedBooks/ListedBooks';
 import BookDetails from './Components/BookDetails/BookDetails';
 import PageToRead from './Components/PageToRead/PageToRead';
 import Contact from './Components/ContactUS/Contact';
-import Test from './Components/Test/Test';
 import FamousAuthor from './Components/FamousAuthor/FamousAuthor';
 const router = createBrowserRouter([
   {
@@ -47,10 +46,6 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
-      },
-      {
-        path: '/test',
-        element:<Test></Test>
       }
     ]
   }

@@ -4,9 +4,9 @@ import { IoBookOutline } from "react-icons/io5";
 const FamousAuthor = () => {
     return (
         <div className='mt-24 mb-20 font-workSans'>
-            <h1 className='font-bold text-5xl text-center font-workSans'>THE FAMOUS AUTHORS & PUBLISHERS</h1>
-            <p className='w-[1000px] text-center mt-6 mx-auto'>Journey through the corridors of literary history, encountering iconic writers and influential publishing entities whose contributions have shaped the literary world. Immerse yourself in a tapestry of creativity, innovation, and enduring literary legacies. Unveil the masterful works of iconic writers and the visionary contributions of esteemed publishers. Engage with the rich tapestry of storytelling that has captivated minds and  shaping the literary landscape.</p>
-            <div className='flex mt-20'>
+            <h1 className='font-bold text-2xl lg:text-5xl text-center font-workSans'>THE FAMOUS AUTHORS & PUBLISHERS</h1>
+            <p className='lg:w-[1000px] text-center mt-6 mx-auto'>Journey through the corridors of literary history, encountering iconic writers and influential publishing entities whose contributions have shaped the literary world. Immerse yourself in a tapestry of creativity, innovation, and enduring literary legacies. Unveil the masterful works of iconic writers and the visionary contributions of esteemed publishers. Engage with the rich tapestry of storytelling that has captivated minds and  shaping the literary landscape.</p>
+            <div className='flex flex-col lg:flex-row mt-20'>
                 <img src="https://i.ibb.co/RgCSgrq/team-1.png" alt="" />
                 <img src="https://i.ibb.co/Ph2srmP/team-2.png" alt="" />
                 <img src="https://i.ibb.co/mDkq0p4/team-3.png" alt="" />
@@ -49,14 +49,14 @@ const FamousAuthor = () => {
             </div>
 
 
-            <section className='mt-20 flex gap-24'>
-                <div className='w-1/2 mt-12'>
+            <section className='mt-20 flex flex-col lg:flex-row gap-6 lg:gap-24'>
+                <div className='lg:w-1/2 text-center lg:text-left mt-12'>
                     <h1 className='text-[40px] font-bold'>A WORD FROM THE AUTHOR</h1>
                     <p className='text-sm text-center'>What our expert says about this book.</p>
                     <p className='mt-6 text-[8px] text-[#979797] text-center'>____mk____</p>
 
-                    <div className='mt-8 w-[600px] bg-base-200 border-l-8 border-[#2fc29d] p-10'>
-                        <p className='italic text-lg text-[#747474] font-workSans'>Be the change you wish to see in the world." This profound quote by Mahatma Gandhi reminds us of our power to enact meaningful change through our actions and choices. It serves as a timeless call to action, inspiring individuals to strive for a better world through personal example and initiative.</p>
+                    <div className='mt-8 lg:w-[600px] bg-base-200 border-l-8 border-[#2fc29d] p-10'>
+                        <p className='italic text-base lg:text-lg text-[#747474] font-workSans'>Be the change you wish to see in the world." This profound quote by Mahatma Gandhi reminds us of our power to enact meaningful change through our actions and choices. It serves as a timeless call to action, inspiring individuals to strive for a better world through personal example and initiative.</p>
                     </div>
                 </div>
                 <div>

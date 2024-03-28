@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { SlCalender } from "react-icons/sl";
 
 const DisplayReadBooksAndWishlistBooks = ({ book }) => {
-    const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
+    const { bookId, bookName, author, image,  totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
     return (
         <div>
             <div className='border lg:w-full w-[290px] rounded-2xl mb-6 px-6'>

@@ -11,7 +11,7 @@ const BookDetails = () => {
     const idInt = parseInt(id)
     const book = books.find(book => book.bookId === idInt)
     // console.log(book);
-    const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
+    const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
 
     const handleAddRead = () => {
         const getBooksFromBookList = () => {

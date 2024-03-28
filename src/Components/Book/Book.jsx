@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CiStar } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 const Book = ({ book }) => {
     // console.log(book);
-    const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
+    const { bookId, bookName, author, image, rating, category, tags, } = book;
     // console.log(tags);
     return (
         <div>
